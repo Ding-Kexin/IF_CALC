@@ -207,7 +207,7 @@ class Classifier(nn.Module):
 
 
 class Discriminator_H(nn.Module):
-    def __init__(self, l1):
+    def __init__(self, l1, Classes):
         super(Discriminator_H, self).__init__()
         self.conv1 = nn.Sequential(
             nn.Conv2d(l1, 32, kernel_size=3, padding=1),
@@ -245,7 +245,7 @@ class Discriminator_H(nn.Module):
         )
 
         self.avgpool = nn.AdaptiveAvgPool2d(1)
-        self.fc = nn.Linear(128, 15)
+        self.fc = nn.Linear(128, Classes)
         self.sa = SpatialAttention()
 
     def forward(self, input):  # input:64*144*16*16
@@ -264,7 +264,7 @@ class Discriminator_H(nn.Module):
 
 
 class Discriminator_L(nn.Module):
-    def __init__(self, l2):
+    def __init__(self, l2, Classes):
         super(Discriminator_L, self).__init__()
         self.conv1 = nn.Sequential(
             nn.Conv2d(l2, 32, kernel_size=3, padding=1),
@@ -302,7 +302,7 @@ class Discriminator_L(nn.Module):
         )
 
         self.avgpool = nn.AdaptiveAvgPool2d(1)
-        self.fc = nn.Linear(128, 15)
+        self.fc = nn.Linear(128, Classes)
         self.sa = SpatialAttention()
 
     def forward(self, input):  # input:64*144*16*16
@@ -340,8 +340,8 @@ class Network(nn.Module):
 
 def train_network(train_loader, TrainPatch1, TrainPatch2, TrainLabel1, TestPatch1, TestPatch2, TestLabel, LR, EPOCH, patchsize, l1, l2, Classes):
     cnn = Network(l1=l1, l2=l2, Classes=Classes)
-    dis_H = Discriminator_H(l1=l1)
-    dis_L= Discriminator_L(l2=l2)
+    dis_H = Discriminator_H(l1=l1, Classes=Classes)
+    dis_L= Discriminator_L(l2=l2, Classes=Classes)
     cnn.cuda()
     dis_H.cuda()
     dis_L.cuda()
@@ -461,14 +461,14 @@ def train_network(train_loader, TrainPatch1, TrainPatch2, TrainLabel1, TestPatch
                 gan_loss.append(g_loss.data.cpu().numpy())
                 # save the parameters in network
                 if accuracy > BestAcc:
-                    torch.save(cnn.state_dict(), 'CALC.pkl')
+                    torch.save(cnn.state_dict(), 'CALC_Trento.pkl')
                     BestAcc = accuracy
                     w0B = w0
                     w1B = w1
                     w2B = w2
                 cnn.train()  ### 启用 Batch Normalization 和 Dropout
 
-    cnn.load_state_dict(torch.load('CALC.pkl'))
+    cnn.load_state_dict(torch.load('CALC_Trento.pkl'))
     cnn.eval()
     w0 = w0B
     w1 = w1B
