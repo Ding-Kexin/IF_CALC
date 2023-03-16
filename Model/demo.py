@@ -9,7 +9,7 @@ import time
 from CALC import train_network
 # -------------------------------------------------------------------------------
 # Parameter Setting
-parser = argparse.ArgumentParser("GLT")
+parser = argparse.ArgumentParser("CALC")
 parser.add_argument('--gpu_id', default='0', help='gpu id')
 parser.add_argument('--seed', type=int, default=1, help='number of seed')
 parser.add_argument('--epoches', type=int, default=250, help='epoch number')
