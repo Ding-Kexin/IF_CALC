@@ -13,7 +13,7 @@ Run Model/demo.py
 ****
 # Citation
 If you find this paper useful, please cite:
->@article{LU2023118,
+``` >@article{LU2023118,
 >title = {Coupled adversarial learning for fusion classification of hyperspectral and LiDAR data},
 >journal = {Information Fusion},
 >volume = {93},
@@ -26,4 +26,4 @@ If you find this paper useful, please cite:
 }
 ****
 # Contact
-Kexin Ding:(dingkexin.hnu.edu.cn)
+Kexin Ding:[dingkexin.hnu.edu.cn](dingkexin@hnu.edu.cn)
