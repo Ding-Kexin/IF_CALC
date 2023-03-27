@@ -8,22 +8,24 @@ The repository contains the implementations for "**Coupled Adversarial Learning 
 
 [Houston2013](http://www.grss-ieee.org/community/technical-committees/data-fusion/2013-ieee-grss-data-fusion-contest/)
 ****
-# Train
-Run Model/demo.py
+# Train CALC
+``` 
+Model/demo.py
+``` 
 ****
 # Citation
 If you find this paper useful, please cite:
 ``` 
 @article{LU2023118,
-  title = {Coupled adversarial learning for fusion classification of hyperspectral and LiDAR data},
-  journal = {Information Fusion},
-  volume = {93},
-  pages = {118-131},
-  year = {2023},
-  issn = {1566-2535},
-  doi = {https://doi.org/10.1016/j.inffus.2022.12.020},
-  url = {https://www.sciencedirect.com/science/article/pii/S156625352200269X},
-  author = {Ting Lu and Kexin Ding and Wei Fu and Shutao Li and Anjing Guo}
+    title = {Coupled adversarial learning for fusion classification of hyperspectral and LiDAR data},
+    journal = {Information Fusion},
+    volume = {93},
+    pages = {118-131},
+    year = {2023},
+    issn = {1566-2535},
+    doi = {https://doi.org/10.1016/j.inffus.2022.12.020},
+    url = {https://www.sciencedirect.com/science/article/pii/S156625352200269X},
+    author = {Ting Lu and Kexin Ding and Wei Fu and Shutao Li and Anjing Guo}
 }
 ```
 ****
