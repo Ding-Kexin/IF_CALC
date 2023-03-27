@@ -1,5 +1,5 @@
 # CALC
-The repository contains the implementations for "**Coupled Adversarial Learning for Fusion Classification of Hyperspectral and LiDAR Data**". You can find [the PDF of this paper](https://www.sciencedirect.com/science/article/pii/S156625352200269X)
+The repository contains the implementations for "**Coupled Adversarial Learning for Fusion Classification of Hyperspectral and LiDAR Data**". You can find [the PDF of this paper](https://www.sciencedirect.com/science/article/pii/S156625352200269X).
 ****
 ![CALC](https://github.com/Ding-Kexin/CALC/blob/main/figure/CALC.jpg)
 ****
@@ -30,4 +30,4 @@ If you find this paper useful, please cite:
 ```
 ****
 # Contact
-Kexin Ding: [dingkexin.hnu.edu.cn](dingkexin@hnu.edu.cn)
+Kexin Ding: [dingkexin@hnu.edu.cn](dingkexin@hnu.edu.cn)
