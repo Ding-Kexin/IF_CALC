@@ -4,13 +4,13 @@ The repository contains the implementations for "**Coupled Adversarial Learning 
 ![CALC](https://github.com/Ding-Kexin/CALC/blob/main/figure/CALC.jpg)
 ****
 # Datasets
-[MUUFL](https://github.com/GatorSense/MUUFLGulfport/)
-
-[Houston2013](http://www.grss-ieee.org/community/technical-committees/data-fusion/2013-ieee-grss-data-fusion-contest/)
+- [MUUFL](https://github.com/GatorSense/MUUFLGulfport/)
+- [Trento](https://github.com/danfenghong/IEEE_GRSL_EndNet/blob/master/README.md)
+- [Houston2013](https://hyperspectral.ee.uh.edu/?page_id=459)
 ****
 # Train CALC
 ``` 
-Model/demo.py
+python Model/demo.py
 ``` 
 ****
 # Citation
