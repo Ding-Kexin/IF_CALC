@@ -13,6 +13,14 @@ The repository contains the implementations for "**Coupled Adversarial Learning 
 python Model/demo.py
 ``` 
 ****
+# Results
+| Dataset | OA (%) | AA (%) | Kappa (%) |
+| :----: | :----: | :----: | :----: |
+| MUUFL  | 82.90 | 79.65 | 77.89 |
+| Trento  | 99.36 | 98.52 | 99.14 |
+| Houston  | 94.77 | 95.36 | 94.34 |
+****
+****
 # Citation
 If you find this paper useful, please cite:
 ``` 
