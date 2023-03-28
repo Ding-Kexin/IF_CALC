@@ -20,7 +20,6 @@ python Model/demo.py
 | Trento  | 99.36 | 98.52 | 99.14 |
 | Houston  | 94.77 | 95.36 | 94.34 |
 ****
-****
 # Citation
 If you find this paper useful, please cite:
 ``` 
