@@ -25,10 +25,10 @@ def samplingFixedNum(sample_num, groundTruth, seed):              #divide datase
 train_num = 20
 for i in range(10):
     seed = i + 1
-    Muufl_gt = scio.loadmat('/home/s4u2/dkx_expriment/MMGAN/dataset/Muufl/Muufl_gt.mat')
+    Muufl_gt = scio.loadmat(./dataset/Muufl/Muufl_gt.mat')
     Muufl_gt = Muufl_gt['Muufl_gt']
     gt = Muufl_gt.reshape(np.prod(Muufl_gt.shape[:2]), ).astype(np.int)
-    train_index, test_index = sampleFixNum.samplingFixedNum(train_num, gt, seed)
+    train_index, test_index = samplingFixedNum(train_num, gt, seed)
     train_data = np.zeros(np.prod(Muufl_gt.shape[:2]), )
     train_data[train_index] = gt[train_index]
     test_data = np.zeros(np.prod(Muufl_gt.shape[:2]), )
