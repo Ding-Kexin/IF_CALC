@@ -1,7 +1,5 @@
 import numpy as np
 import scipy.io as scio
-import sampleFixNum
-from data_preprocessing import samplingDiffFixedNum
 
 def samplingFixedNum(sample_num, groundTruth, seed):              #divide dataset into train and test datasets
     labels_loc = {}
